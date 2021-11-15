@@ -298,7 +298,15 @@ font-size: 14px;
  flex-direction:column;
 }
 
-#input{
+#booking-05 #personal_info label{
+  
+  padding-top:0px;
+}
+
+#booking-05 .select-option {
+  margin-bottom:39px;
+}
+#booking-05 #input{
  height:40px;
 }
 
