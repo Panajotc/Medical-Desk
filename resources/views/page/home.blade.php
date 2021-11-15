@@ -12,7 +12,6 @@
 </head>
 <body >
   <livewire:navbar/>
-  <div class=''>
     <livewire:first/>
     <livewire:second/>
    
@@ -20,18 +19,18 @@
        <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16 '>03. Scegli fra le date e orari disponibili
        </h4>
        <p>Date</p>
-        <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-          <livewire:buttons/>
-        </div>
+          <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
+             <livewire:buttons/>
+           <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+             <livewire:buttons/>
+          </div>
       
        <p>Orari</p>
         <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
@@ -39,7 +38,7 @@
           <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
-          <livewire:buttons/>
+        <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
@@ -50,75 +49,88 @@
         </div>
       
     </div>
-    <div id="booking-04" class="ml-24 2xl:ml-60">
+
+  <div id="booking-04" class="ml-24 2xl:ml-60">
        <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16'>04. Dati anagrafici </h4>
        
-       <div id="personal_info" class="grid grid-cols-2" >
+      <div id="personal_info" class="grid grid-cols-2" >
+
          <div>
-         <label for="name">Name</label>
-         <livewire:input text="text"/>
+           <label for="name">Name</label>
+           <livewire:input text="text"/>
          </div>
-         <div>
-         <label for="name">Cogname</label>
-         <livewire:input text="text"/>
+
+       <div>
+           <label for="name">Cogname</label>
+           <livewire:input text="text"/>
          </div>
+
          <div>
          <label for="name">Email</label>
          <livewire:input text="email"/>
          <p class="text-sm leading-5 my-4 text-black-900">La conferma verrà invita a questa mail. 
           Si richiede di utilizzare la mail propria personale non mail aziendali</p>
          </div>
+
          <div>
          <label for="name">Cellulare</label>
          <livewire:input text="tel"/>
          </div>
+
          <div>
          <label for="name">Nazionalita</label>
          <livewire:input text="text"/>
          </div>
+
          <div>
          <label for="name">Code di fiscale</label>
          <livewire:input text="number" />
          </div>
+
          <div>
          <label for="name">Data di nascita</label>
          <livewire:input text="date"/>
          </div>
+
          <div>
          <label for="name">Sesso</label>
          <livewire:gender/>
          </div>
+
          <div>
          <label for="name">Comune residenca</label>
          <livewire:input text="number"/>
          </div>
+
          <div>
          <label for="name">Cap</label>
          <livewire:input text="number"/>
          </div>
+
          <div>
          <label for="name">Indirizzo</label>
          <livewire:input text="text"/>
          </div>
          
-        </div>
+    </div>
             
               
-                  <div class="checkbox inline-flex" >
-                   <livewire:checkbox/>  <p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
-                   </div>
-                   <div class="checkbox-1 mb-16 inline-flex">
-                    <livewire:checkbox/><p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e do il consenso al loro trattamento da parte di Medispa S.r.l. quale unico Responsabile Esterno del trattamento dei dati sanitari. * (leggi)</p>
-                    </div>
-             
-      <div>
-      <livewire:submit text="AVANTI" />
-      </div>
-         
-    </div>
+           <div class="checkbox inline-flex" >
+           <livewire:checkbox/>  <p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
+           </div>
 
-    <div>
-    <div id="booking-05" class='ml-24 2xl:ml-60'>
+           <div class="checkbox-1 mb-16 inline-flex">
+              <livewire:checkbox/><p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e do il consenso al loro trattamento da parte di Medispa S.r.l. quale unico Responsabile Esterno del trattamento dei dati sanitari. * (leggi)</p>
+           </div>
+             
+         <div>
+          <livewire:submit text="AVANTI" />
+         </div>
+         
+  </div>
+
+    
+  <div id="booking-05" class='ml-24 2xl:ml-60'>
        <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-20'>05. Tipo di ricevuta </h4>
         <p class='mt-16'>A chi dovrà essere intestata la fattura?</p>
          
@@ -145,79 +157,86 @@
             </div>
 
             <div>
-                <label for="name">Email invio fattura</label>
-                <livewire:input text="text"/>
+              <label for="name">Email invio fattura</label>
+              <livewire:input text="text"/>
             </div>
 
             <div>
-               <label for="name">Indirizzo</label>
-               <livewire:input text="text"/>
+              <label for="name">Indirizzo</label>
+              <livewire:input text="text"/>
             </div>
 
             <div>
-               <label for="name">Citta</label>
-               <livewire:input text="text"/>
+              <label for="name">Citta</label>
+              <livewire:input text="text"/>
             </div>
                
             <div>
-               <label for="name">Cap</label>
-               <livewire:input text="text"/>
-            </div>
+              <label for="name">Cap</label>
+              <livewire:input text="text"/>
+          </div>
             
             <div>
-                <label for="name">Provinzia</label>
-                <livewire:input text="text"/>
+              <label for="name">Provinzia</label>
+              <livewire:input text="text"/>
             </div>
 
             <div>
-                <label for="name">Nazione</label>
-                <livewire:input text="text"/>
+              <label for="name">Nazione</label>
+              <livewire:input text="text"/>
             </div>
 
         </div>
 
-        <div>
-      <livewire:submit text="VERIFICA"/>
+      <div>
+        <livewire:submit text="VERIFICA"/>
       </div>
 
-    </div>
+  </div>
 
-    <div id="booking-06" class='ml-24 2xl:ml-60'>
+  <div id="booking-06" class='ml-24 2xl:ml-60'>
       <h4 class='text-4xl xl:text-2xl sm:text-xl font-bold mt-20 mb-20'>06. Metodo di pagamento</h4>
+
        <div class="pay-way inline-flex">
          <livewire:pay-way text="Carta di credito"/> <i class="fab fa-cc-mastercard pl-8"></i><i class="fab fa-cc-visa pl-8"></i><i class="fab fa-cc-amex pl-8"></i>
        </div>
 
-       <div id="card-info" class='mb-16'>
+      <div id="card-info" class='mb-16'>
+
                 <div class="first-input-card">
-                   <label for="name">Provinzia</label>
-                   <livewire:big-input  text="text"/>
+                  <label for="name">Provinzia</label>
+                  <livewire:big-input  text="text"/>
                 </div>
 
           <div class="input-dtl grid grid-cols-2 gap-x-16 my-10">
-               <div>
-                <label for="name">Data di scandeza</label>
-                <livewire:card-input text="date"/>
-               </div>
 
-               <div class="CVC">
-                <label for="name">CVC/CVV</label>
-                <livewire:card-input text="number"/>
-               </div>
+                <div>
+                 <label for="name">Data di scandeza</label>
+                 <livewire:card-input text="date"/>
+                </div>
+
+                <div class="CVC">
+                 <label for="name">CVC/CVV</label>
+                 <livewire:card-input text="number"/>
+                </div>
 
           </div>
+
                <div>
                    <label for="name">Nome sualla carta</label>
                    <livewire:big-input  text="text"/>
                </div>
-         </div>
+
+      </div>
        
-         <div class="pay-way2 inline-flex">
-         <livewire:pay-way text="PayPal"/> <i class="fab fa-paypal px-10"></i> <p>Che cos’e PayPal?</p>
-           </div> 
+          <div class="pay-way2 inline-flex">
+           <livewire:pay-way text="PayPal"/> <i class="fab fa-paypal px-10"></i> <p>Che cos’e PayPal?</p>
+          </div> 
+
              <div class='mt-14'>
                 <livewire:pay-way text="GooglePay"/>
              </div> 
+
               <div id="checkbox" class="max-w-screen-lg">
 
                 <div class="checkbox inline-flex mb-7 mt-12" >
@@ -231,10 +250,11 @@
                 <div class="checkbox inline-flex">
                     <livewire:checkbox/><p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e do il consenso al loro trattamento da parte di Medispa S.r.l. quale unico Responsabile Esterno del trattamento dei dati sanitari. * (leggi)</p>
                 </div>
+
               </div>
           
               <livewire:submit2 text="CONFERMA E PAGA"/>      
-    </div>
+    
   </div>
     <livewire:footer/>
 @livewireScripts

@@ -202,9 +202,11 @@ height: 45px;
 .hidden_flag{
 visibility:hidden;
 }
+
 #id_select2_example {
   border:1px solid red;
 }
+
 #language {
   width:37px;
   height:24px;
