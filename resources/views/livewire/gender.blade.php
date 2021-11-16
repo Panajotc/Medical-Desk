@@ -4,25 +4,24 @@
 <div id="gender">
           
           <div class="mb-3">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="{{$name}}" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">M</label>
           </div>
-          <div class="mb-3">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">F</label>
-          </div>
-        </div>
 
 
         <style>
+        #gender {
+         display:inline-flex;
+        
+        }
+        #gender .form-check-input {
+        
+          margin-top:12px;
+        }
         #gender .form-check-label {
-         
          padding-top:0px;
          padding-left:10px;
         }
         
-        .mb-3{
-          margin-left:10px;
-        }
         
         </style>

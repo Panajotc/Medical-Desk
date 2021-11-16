@@ -21,6 +21,7 @@ class CreateDatianagraficiTable extends Migration
             $table->bigInteger("cellulare");
             $table->string("nazionalita");
             $table->integer("code_di_fiscale");
+            $table->date("date");
             $table->boolean("male");
             $table->boolean("female");
             $table->integer("Comune_residenca");

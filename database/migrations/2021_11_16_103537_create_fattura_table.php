@@ -24,6 +24,7 @@ class CreateFatturaTable extends Migration
             $table->string("Indirizzo");
             $table->string("citta");
             $table->integer("Cap");
+            $table->string("provinza");
             $table->string("Nazione");
         });
     }

@@ -57,66 +57,69 @@
 
          <div>
            <label for="name">Name</label>
-           <livewire:input text="text"/>
+           <livewire:input text="text" name="name"/>
          </div>
 
        <div>
            <label for="name">Cogname</label>
-           <livewire:input text="text"/>
+           <livewire:input text="text" name="cogname"/>
          </div>
 
          <div>
              <label for="name">Email</label>
-             <livewire:input text="email"/>
+             <livewire:input text="email" name="email" />
              <p class="text-sm leading-5 my-4 text-black-900">La conferma verrà invita a questa mail. 
              Si richiede di utilizzare la mail propria personale non mail aziendali</p>
          </div>
 
           <div>
            <label for="name">Cellulare</label>
-           <livewire:input text="tel"/>
+           <livewire:input text="tel" name="cellulare"/>
           </div>
 
           <div>
             <label for="name">Nazionalita</label>
-            <livewire:input text="text"/>
+            <livewire:input text="text" name="nazionalita"/>
           </div>
 
           <div>
             <label for="name">Code di fiscale</label>
-            <livewire:input text="number" />
+            <livewire:input text="number" name="code_di_fiscale" />
           </div>
 
           <div>
             <label for="name">Data di nascita</label>
-            <livewire:input text="date"/>
+            <livewire:input text="date" name="date"/>
           </div>
 
           <div>
-            <label for="name">Sesso</label>
-            <livewire:gender/>
+            <label for="name" >Sesso</label>
+              <div>
+              <livewire:gender name="male"/>
+              <livewire:genderf name="female"/>
+              </div>
           </div>
 
           <div>
             <label for="name">Comune residenca</label>
-            <livewire:input text="number"/>
+            <livewire:input text="number" name="Comune_residenca"/>
           </div>
 
           <div>
             <label for="name">Cap</label>
-            <livewire:input text="number"/>
+            <livewire:input text="number" name="Cap"/>
           </div>
 
         <div>
            <label for="name">Indirizzo</label>
-           <livewire:input text="text"/>
+           <livewire:input text="text" name="Indirizzo"/>
          </div>
          
     </div>
             
               
            <div class="checkbox inline-flex" >
-            <livewire:checkbox/>  <p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
+            <livewire:checkbox/><p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
            </div>
 
            <div class="checkbox-1 mb-16 inline-flex">
@@ -143,47 +146,47 @@
           
            <div>
              <label for="name">Name</label>
-             <livewire:input text="text"/>
+             <livewire:input text="text" name="name"/>
            </div>
 
            <div>
              <label for="name">Cogname</label>
-             <livewire:input text="text"/>
+             <livewire:input text="text" name="cogname"/>
            </div>
 
             <div>
               <label for="name">Codice Fiscale</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="code_di_fiscale"/>
             </div>
 
             <div>
               <label for="name">Email invio fattura</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="email"/>
             </div>
 
             <div>
               <label for="name">Indirizzo</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="Indirizo"/>
             </div>
 
             <div>
               <label for="name">Citta</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="citta"/>
             </div>
                
             <div>
               <label for="name">Cap</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="cap"/>
           </div>
             
             <div>
               <label for="name">Provinzia</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="provinza"/>
             </div>
 
             <div>
               <label for="name">Nazione</label>
-              <livewire:input text="text"/>
+              <livewire:input text="text" name="Nazione"/>
             </div>
 
         </div>
