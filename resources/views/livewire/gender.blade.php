@@ -22,6 +22,15 @@
          padding-top:0px;
          padding-left:10px;
         }
+         
+        @media (max-width: 414px){
+          #gender .form-check-input {
         
+        margin-top:4px;
+      }
+      #gender .mb-3{
+        margin-left:14px;
+      }
+        }
         
         </style>

@@ -185,8 +185,8 @@ height: 45px;
   }  
 }
 @media (max-width: 414px){
-  #navbar .logo{
-    margin-left:-100px;
+#navbar .logo{
+margin-left:-100px;
   
 }
 
@@ -277,9 +277,19 @@ font-size: 14px;
 
 #booking-04 {
   margin:0px 0px 0px 30px;
- 
-
 }
+#booking-04 label {
+  font-size:14px;
+}
+
+#booking-04 #input{
+  height:40px;
+ }
+#booking-05 label {
+  font-size:14px;
+  
+}
+
 
 #booking-04 h4 {
   font-size:18px;

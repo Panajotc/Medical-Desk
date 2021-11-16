@@ -53,7 +53,7 @@
   <div id="booking-04" class="ml-24 2xl:ml-60">
        <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16'>04. Dati anagrafici </h4>
        
-      <div id="personal_info" class="grid grid-cols-2" >
+      <div id="personal_info" class="grid grid-cols-2">
 
          <div>
            <label for="name">Name</label>
@@ -95,8 +95,8 @@
           <div>
             <label for="name" >Sesso</label>
               <div>
-              <livewire:gender name="male"/>
-              <livewire:genderf name="female"/>
+               <livewire:gender name="male"/>
+               <livewire:genderf name="female"/>
               </div>
           </div>
 
