@@ -18,7 +18,7 @@ class CreateDatianagraficiTable extends Migration
             $table->string("name");
             $table->string("cogname");
             $table->string("email");
-            $table->bigInt("cellulare");
+            $table->bigInteger("cellulare");
             $table->string("nazionalita");
             $table->integer("code_di_fiscale");
             $table->boolean("male");

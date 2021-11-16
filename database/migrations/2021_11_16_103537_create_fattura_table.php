@@ -15,6 +15,8 @@ class CreateFatturaTable extends Migration
     {
         Schema::create('fattura', function (Blueprint $table) {
             $table->id();
+            $table->boolean("azienda");
+            $table->boolean("personi");
             $table->string("name");
             $table->string("cogname");
             $table->integer("code_di_fiscale");
@@ -22,7 +24,6 @@ class CreateFatturaTable extends Migration
             $table->string("Indirizzo");
             $table->string("citta");
             $table->integer("Cap");
-            $table->string("Indirizzo");
             $table->string("Nazione");
         });
     }
