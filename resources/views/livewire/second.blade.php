@@ -19,7 +19,7 @@
        
         <div id="dropd" class='flex justify-between'>
           
-           <p>90$</p>
+           <p class="flex">90$</p>
            
           <div>
             <label for="">Qta</label>
@@ -40,7 +40,7 @@
     <div class="col-12">
       
       <div id="dropd" class='flex justify-between '>
-        <p>50$</p>
+        <p class="flex">50$</p>
         <div>
             <label for="">Qta</label>
          <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">

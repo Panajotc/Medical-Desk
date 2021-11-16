@@ -38,7 +38,7 @@
           <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
-        <livewire:buttons/>
+          <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
           <livewire:buttons/>
@@ -66,57 +66,57 @@
          </div>
 
          <div>
-         <label for="name">Email</label>
-         <livewire:input text="email"/>
-         <p class="text-sm leading-5 my-4 text-black-900">La conferma verrà invita a questa mail. 
-          Si richiede di utilizzare la mail propria personale non mail aziendali</p>
+             <label for="name">Email</label>
+             <livewire:input text="email"/>
+             <p class="text-sm leading-5 my-4 text-black-900">La conferma verrà invita a questa mail. 
+             Si richiede di utilizzare la mail propria personale non mail aziendali</p>
          </div>
 
-         <div>
-         <label for="name">Cellulare</label>
-         <livewire:input text="tel"/>
-         </div>
+          <div>
+           <label for="name">Cellulare</label>
+           <livewire:input text="tel"/>
+          </div>
 
-         <div>
-         <label for="name">Nazionalita</label>
-         <livewire:input text="text"/>
-         </div>
+          <div>
+            <label for="name">Nazionalita</label>
+            <livewire:input text="text"/>
+          </div>
 
-         <div>
-         <label for="name">Code di fiscale</label>
-         <livewire:input text="number" />
-         </div>
+          <div>
+            <label for="name">Code di fiscale</label>
+            <livewire:input text="number" />
+          </div>
 
-         <div>
-         <label for="name">Data di nascita</label>
-         <livewire:input text="date"/>
-         </div>
+          <div>
+            <label for="name">Data di nascita</label>
+            <livewire:input text="date"/>
+          </div>
 
-         <div>
-         <label for="name">Sesso</label>
-         <livewire:gender/>
-         </div>
+          <div>
+            <label for="name">Sesso</label>
+            <livewire:gender/>
+          </div>
 
-         <div>
-         <label for="name">Comune residenca</label>
-         <livewire:input text="number"/>
-         </div>
+          <div>
+            <label for="name">Comune residenca</label>
+            <livewire:input text="number"/>
+          </div>
 
-         <div>
-         <label for="name">Cap</label>
-         <livewire:input text="number"/>
-         </div>
+          <div>
+            <label for="name">Cap</label>
+            <livewire:input text="number"/>
+          </div>
 
-         <div>
-         <label for="name">Indirizzo</label>
-         <livewire:input text="text"/>
+        <div>
+           <label for="name">Indirizzo</label>
+           <livewire:input text="text"/>
          </div>
          
     </div>
             
               
            <div class="checkbox inline-flex" >
-           <livewire:checkbox/>  <p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
+            <livewire:checkbox/>  <p class='mx-4'>Ho preso visione dell’informativa sul trattamento dei miei dati personali e i Termini e Condizioni *(leggi) </p>
            </div>
 
            <div class="checkbox-1 mb-16 inline-flex">

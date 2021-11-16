@@ -22,7 +22,7 @@
     <div  id="booking-01" class='ml-24 2xl:ml-60'>
       <h1 class=' text-4xl font-bold mr-24 xl:text-2xl  sm:text-xl'>01. Prenota ora i tamponi in Drive-in</h1>
       
-    <div class="reserve ">
+    <div class="reserve flex justify-items-center justify-between">
       <h4><i class="fas fa-map-marker-alt fa-2x"></i>ParkingGO Malpensa</h4>
        <p><i class="fas fa-clock fa-2x"></i>Mar 23 Feb 2021</p>
       <a  href="#" class="items-center float-right pt-3 pr-24 text-lg underline">Modiﬁca negozio</a>
