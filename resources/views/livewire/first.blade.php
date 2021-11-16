@@ -10,10 +10,11 @@
 </svg>
 </div>
   <div id="service" class='w-1/3 leading-tight ml-24 2xl:ml-60 '>
-    
-     <h2 class='text-4xl  font-bold xl:text-2xl  sm:text-xl'>
-       PRENOTA SERVIZIOIN STORE
-      </h2>
+     
+        <h2 class='text-4xl  font-bold xl:text-2xl  sm:text-xl'>
+         PRENOTA SERVIZIOIN STORE
+        </h2>
+      
     <p class='my-6 text-xs 2xl:w-8/12'>
     All’interno delle strutture e dei mezzi ParkinGO è necessario indossare la mascherina e rispettare la distanza di sicurezza interpersonale.
     </p>

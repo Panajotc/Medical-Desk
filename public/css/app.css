@@ -28,12 +28,16 @@ border-radius: 5px;
 background-color: #fff;
 padding-right: 20px;
 margin-bottom: 5px;
-  
+
 }
 #dropd {
   margin-top:70px;
 }
-
+#dropd .form-select-1{
+  background-color:#D0D8DA;
+  border:1px solid white;
+  color:white;
+}
 #booking-02 .type-01,.type-02 {
 color: #fff;
 width: 350px;
@@ -217,10 +221,13 @@ visibility:hidden;
   text-align:center;
   margin-left:30px;
   width:85%;
+  
 }
 
 #service h2 {
   font-size:27px;
+  width:262px;
+  margin-left:48px;
 }
 
 #booking-01 {
