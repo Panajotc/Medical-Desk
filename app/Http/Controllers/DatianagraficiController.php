@@ -13,8 +13,8 @@ class DatianagraficiController extends Controller
   {
     $place = Location::all();
     // dd($place);
-    return view('home', [
-      'place' => $place,
+    return view('home',[
+      'place'=>$place,
     ]);
   }
 
