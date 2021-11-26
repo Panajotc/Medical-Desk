@@ -4,9 +4,11 @@ width:100%;
 #id_select2_example{
  width:204px;
 }
-#booking-01 p{
-  visibility:hidden;
+
+#location {
+background-color: #D0D8DA;
 }
+
 #booking-01 .reserve {
 background-color: #D0D8DA;
 width: 90%;

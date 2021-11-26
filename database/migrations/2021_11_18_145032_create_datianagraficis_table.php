@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDatianagraficiTable extends Migration
+class CreateDatianagraficisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDatianagraficiTable extends Migration
      */
     public function up()
     {
-        Schema::create('_datianagrafici', function (Blueprint $table) {
+        Schema::create('datianagrafici', function (Blueprint $table) {
             $table->id();
             $table->string("name");
             $table->string("cogname");
@@ -28,6 +28,7 @@ class CreateDatianagraficiTable extends Migration
             $table->integer("Cap");
             $table->string("Indirizzo");
         });
+        Schema::rename('datianagrafici', 'datianagraficis');
     }
 
     /**
@@ -37,6 +38,6 @@ class CreateDatianagraficiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_datianagrafici');
+        Schema::dropIfExists('datianagrafici');
     }
 }

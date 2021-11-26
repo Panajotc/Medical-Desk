@@ -1,3 +1,3 @@
 <div>
-    <button id="submit">{{$text1}}</button>
+    <button id="submit" type="submit">{{$text1}}</button>
 </div>

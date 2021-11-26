@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTamponeRapidoTable extends Migration
+class CreateLocationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTamponeRapidoTable extends Migration
      */
     public function up()
     {
-        Schema::create('_tampone_rapido', function (Blueprint $table) {
+        Schema::create('locations', function (Blueprint $table) {
             $table->id();
-            $table->integer("quantity");
+            $table->string('locationname');
         });
     }
 
@@ -26,6 +26,6 @@ class CreateTamponeRapidoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_tampone_rapido');
+        Schema::dropIfExists('locations');
     }
 }

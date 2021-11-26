@@ -1,11 +1,11 @@
-<div class="feedback_issue">
+<div class="selectora">
 
-<input  type="radio" id="{{$btn}}" name="button" value="{{$value}}">
-<label for="{{$btn}}" class="label_exp">lunedi 27</label>
+<input  type="radio" id="{{$bt}}" name="orari" value="{{$val}}">
+<label for="{{$bt}}" class="label">lunedi 27</label>
 </div>
 
 <style>
-.feedback_issue {
+.selectora {
   display: flex;
   justify-content: center;
   margin:20px 28px 20px 0px;
@@ -14,8 +14,8 @@
   border: 2px solid #0FB7B6;
   border-radius:5px;
 }
-.label_exp {
-     
+.label {
+      
       cursor: pointer;
       text-align: center;
       font-size: 18px;
@@ -32,8 +32,9 @@
   input[type="radio"]:checked + label {
       background-color:#0FB7B6;
       color:white;
-      width: 165px;
-      height: 40px;
+      width: 163px;
+      height: 38px;
       border-radius:5px;
+      margin-top:0.5px;
   }
 </style>
