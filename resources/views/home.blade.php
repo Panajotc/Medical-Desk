@@ -43,8 +43,62 @@
 
   </div>
 
-  <livewire:second />
-  <div id="booking-03" class='ml-24 2xl:text-blue-900 2xl:ml-60'>
+ 
+ 
+  <div id="booking-02" class='ml-24 2xl:ml-60 text-blue-900'>
+
+
+      <h4 class='text-4xl font-bold mt-20 xl:text-2xl  sm:text-xl'>02. Prenota ora i tamponi in Drive-in</h4>
+    <div class="test flex ml-2.5">
+
+       <div class="type-01">
+         <h7>Tampone Rapido Antigenico <i class="fas fa-info-circle fa-1x"></i> </h7>
+
+      <div class="col-12">
+       
+        <div id="dropd" class='flex justify-between'>
+          
+           <p class="flex">90$</p>
+           
+          <div>
+            <label>Qta</label>
+              <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+          </div>
+        </div>
+      </div>
+   </div>
+
+  <div class="type-02 mx-7">
+      <h7>Tampone Molecolare PCR <i class="fas fa-info-circle fa-1x"></i></h7>
+
+    <div class="col-12">
+      
+      <div id="dropd" class='flex justify-between '>
+        <p class="flex">50$</p>
+         <div>
+            <label>Qta</label>
+             <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
+               <option selected>0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+             </select>
+         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+  <div id="booking-03" class='ml-24 2xl:text-blue-900 text-blue-900 2xl:ml-60'>
     <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16 '>03. Scegli fra le date e orari disponibili
     </h4>
     <p>Date</p>
@@ -62,7 +116,7 @@
     </div>
 
     <p>Orari</p>
-    <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
+    <div class="btn_group text-blue-900 inline-flex flex-wrap 2xl:mr-40">
       <livewire:buttonora bt="id11" val="btn11" />
       <livewire:buttonora bt="id12" val="btn12" />
       <livewire:buttonora bt="id13" val="btn13" />
@@ -81,9 +135,7 @@
 
 
 
-
-
-  <div id="booking-04" class="ml-24 2xl:ml-60">
+  <div id="booking-04" class="text-blue-900 ml-24 2xl:ml-60">
     <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16'>04. Dati anagrafici </h4>
     <div id="personal_info" class="grid grid-cols-2">
 
@@ -169,7 +221,7 @@
 
 
 
-  <div id="booking-05" class='ml-24 2xl:ml-60'>
+  <div id="booking-05" class='text-blue-900 ml-24 2xl:ml-60'>
     <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-20'>05. Tipo di ricevuta </h4>
     <p class='mt-16'>A chi dovrà essere intestata la fattura?</p>
 
@@ -234,7 +286,7 @@
   </div>
 </form>
 
-<div id="booking-06" class='ml-24 2xl:ml-60'>
+<div id="booking-06" class='text-blue-900 ml-24 2xl:ml-60'>
   <h4 class='text-4xl xl:text-2xl sm:text-xl font-bold mt-20 mb-20'>06. Metodo di pagamento</h4>
 
   <div class="pay-way inline-flex">
