@@ -73,7 +73,7 @@
       </div>
    </div>
 
-  <div class="type-02 mx-7">
+       <div class="type-02 mx-7">
       <h7>Tampone Molecolare PCR <i class="fas fa-info-circle fa-1x"></i></h7>
 
     <div class="col-12">

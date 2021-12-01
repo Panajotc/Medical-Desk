@@ -15,7 +15,6 @@ class CreateRicevutasTable extends Migration
     {
         Schema::create('ricevutas', function (Blueprint $table) {
             $table->id();
-           
             $table->string("firstname");
             $table->string("lastname");
             $table->integer("tax_code");

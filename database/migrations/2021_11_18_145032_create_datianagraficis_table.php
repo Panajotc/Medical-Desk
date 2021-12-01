@@ -15,6 +15,7 @@ class CreateDatianagraficisTable extends Migration
     {
         Schema::create('datianagrafici', function (Blueprint $table) {
             $table->id();
+            $table->foreign('id')->references('id')->on('ricevutas');
             $table->string("name");
             $table->string("cogname");
             $table->string("email");
