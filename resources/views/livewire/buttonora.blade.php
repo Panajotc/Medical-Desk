@@ -1,7 +1,7 @@
 <div class="selectora">
 
-<input  type="radio" id="{{$bt}}" name="orari" value="{{$val}}">
-<label for="{{$bt}}" class="label">lunedi 27</label>
+<input  type="radio" id="{{$bt}}" name="orar" value="{{$val}}">
+<label for="{{$bt}}" class="label">{{$ora}}</label>
 </div>
 
 <style>

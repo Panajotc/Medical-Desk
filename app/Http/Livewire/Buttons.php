@@ -8,10 +8,11 @@ class Buttons extends Component
 {
     public $value;
     public $btn;
-    public function mount($value,$btn){
+    public $date;
+    public function mount($value,$btn,$date){
         $this->value=$value;
         $this->btn=$btn;
-        
+        $this->date=$date;
     } 
     public function render()
     {

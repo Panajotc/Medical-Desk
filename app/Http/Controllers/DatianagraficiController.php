@@ -6,18 +6,27 @@ use Illuminate\Http\Request;
 use App\Models\Datianagrafici;
 use App\Models\Ricevutas;
 use App\Models\Location;
+use App\Models\Date;
+use App\Models\Time;
+
 
 class DatianagraficiController extends Controller
 {
   public function index()
-  {
+  { 
+    $day = Date::all();
+    $orari= Time::all();
     $place = Location::all();
-    // dd($place);
     return view('home',[
       'place'=>$place,
+      'day'=>$day,
+      'orari'=>$orari
     ]);
+    
   }
-
+  
+  
+ 
 
   public function store(Request $request)
   {

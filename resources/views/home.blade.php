@@ -103,32 +103,18 @@
     </h4>
     <p>Date</p>
     <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
-      <livewire:buttons btn="id1" value="btn1" />
-      <livewire:buttons btn="id2" value="btn2" />
-      <livewire:buttons btn="id3" value="btn3" />
-      <livewire:buttons btn="id4" value="btn4" />
-      <livewire:buttons btn="id5" value="btn5" />
-      <livewire:buttons btn="id6" value="btn6" />
-      <livewire:buttons btn="id7" value="btn7" />
-      <livewire:buttons btn="id8" value="btn8" />
-      <livewire:buttons btn="id9" value="btn9" />
-      <livewire:buttons btn="id10" value="btn10" />
+     @foreach($day as $dates)
+     <livewire:buttons btn="{{$dates->id}}" value="btn1" date="{{$dates->date}}"/>
+     @endforeach
+     
     </div>
+     
 
     <p>Orari</p>
     <div class="btn_group text-blue-900 inline-flex flex-wrap 2xl:mr-40">
-      <livewire:buttonora bt="id11" val="btn11" />
-      <livewire:buttonora bt="id12" val="btn12" />
-      <livewire:buttonora bt="id13" val="btn13" />
-      <livewire:buttonora bt="id14" val="btn14" />
-      <livewire:buttonora bt="id15" val="btn15" />
-      <livewire:buttonora bt="id16" val="btn16" />
-      <livewire:buttonora bt="id17" val="btn17" />
-      <livewire:buttonora bt="id18" val="btn18" />
-      <livewire:buttonora bt="id19" val="btn19" />
-      <livewire:buttonora bt="id20" val="btn10" />
-      <livewire:buttonora bt="id21" val="btn21" />
-      <livewire:buttonora bt="id22" val="btn22" />
+    @foreach($orari as $times)
+      <livewire:buttonora bt="{{$times->orari}}" val="btn2" ora="{{$times->orari}}"/>
+      @endforeach
     </div>
 
   </div>
