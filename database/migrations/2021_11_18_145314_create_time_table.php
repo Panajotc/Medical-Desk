@@ -16,6 +16,7 @@ class CreateTimeTable extends Migration
         Schema::create('time', function (Blueprint $table) {
             $table->id();
             $table->time("orari");
+            $table->foreignId("timeid")->constrained("date");
         });
     }
 

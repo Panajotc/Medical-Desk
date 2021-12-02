@@ -32,9 +32,6 @@
   input[type="radio"]:checked + label {
       background-color:#0FB7B6;
       color:white;
-      width: 163px;
-      height: 38px;
-      border-radius:5px;
-      margin-top:0.5px;
+    
   }
 </style>

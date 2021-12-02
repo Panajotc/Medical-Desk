@@ -13,9 +13,8 @@ class CreateDatianagraficisTable extends Migration
      */
     public function up()
     {
-        Schema::create('datianagrafici', function (Blueprint $table) {
-            $table->id();
-            $table->foreign('id')->references('id')->on('ricevutas');
+        Schema::create('datianagraficis', function (Blueprint $table) {
+            $table->id("idpersoni");
             $table->string("name");
             $table->string("cogname");
             $table->string("email");
@@ -29,7 +28,7 @@ class CreateDatianagraficisTable extends Migration
             $table->integer("Cap");
             $table->string("Indirizzo");
         });
-        Schema::rename('datianagrafici', 'datianagraficis');
+      
     }
 
     /**
