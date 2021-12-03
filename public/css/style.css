@@ -177,7 +177,9 @@ html, body {
   #footer svg{
     margin-bottom:27px;
   }
-  
+  #booking-01 .hidd{
+    visibility:hidden;
+  }
   #footer .support a{
     text-decoration: none;
     color:white;
@@ -249,10 +251,17 @@ html, body {
   margin-left:-30px
   }
   
-  #booking-01 p{
+  #booking-01 .hidd{
     visibility:visible;
   }
   
+  #booking-01 .loc {
+    float:right;
+    margin-right:-80px;
+    width: 119px;
+    
+  }
+
   #booking-01 a{
   margin-left:250px;
   padding-right:0px;
@@ -280,9 +289,18 @@ html, body {
     margin-left:30px
   }
   
-  #booking-03 h4 {
-    font-size:18px;
-  }
+#booking-03 .date {
+ width: 90%;
+}
+
+#booking-03 .ora {
+ width: 90%;
+}
+
+  
+#booking-03 h4 {
+font-size:18px;
+}
   
   #booking-04 {
     margin:0px 0px 0px 30px;

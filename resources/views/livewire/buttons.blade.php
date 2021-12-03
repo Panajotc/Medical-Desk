@@ -1,11 +1,11 @@
-<div class="feedback_issue">
+<div id="feedback_issue">
 
   <input type="radio" id="{{$btn}}" name="button" value="{{$value}}">
   <label for="{{$btn}}" class="label_exp">{{$date}}</label>
 </div>
 
 <style>
-  .feedback_issue {
+  #feedback_issue {
     display: flex;
     justify-content: center;
     margin: 20px 28px 20px 0px;
@@ -38,4 +38,12 @@
     height: 40px;
     border-radius: 5px;
   }
+
+
+  @media (max-width: 414px){
+  #feedback_issue {
+    margin-bottom: -20px;
+    
+  }
+}
 </style>

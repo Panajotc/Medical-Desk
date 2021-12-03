@@ -34,4 +34,11 @@
       color:white;
     
   }
+
+  @media (max-width: 414px){
+  .selectora {
+    margin-bottom: -20px;
+    }
+    
+  }
 </style>

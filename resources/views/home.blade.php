@@ -28,7 +28,7 @@
 
       <div class="reserve flex justify-items-center justify-between">
         <h4><i class="fas fa-map-marker-alt fa-2x"></i>ParkingGO Malpensa</h4>
-        <p class="invisible"><i class="fas fa-clock fa-2x"></i>Mar 23 Feb 2021</p>
+        <p class="hidd"><i class="fas fa-clock fa-2x"></i>Mar 23 Feb 2021</p>
         <div class="items-center float-right pt-3 pr-24 text-lg underline">
           <select class="loc w-40 underline">
             @foreach ($place as $location)
@@ -43,58 +43,58 @@
 
   </div>
 
- 
- 
+
+
   <div id="booking-02" class='ml-24 2xl:ml-60 text-blue-900'>
 
 
-      <h4 class='text-4xl font-bold mt-20 xl:text-2xl  sm:text-xl'>02. Prenota ora i tamponi in Drive-in</h4>
+    <h4 class='text-4xl font-bold mt-20 xl:text-2xl  sm:text-xl'>02. Prenota ora i tamponi in Drive-in</h4>
     <div class="test flex ml-2.5">
 
-       <div class="type-01">
-         <h7>Tampone Rapido Antigenico <i class="fas fa-info-circle fa-1x"></i> </h7>
+      <div class="type-01">
+        <h7>Tampone Rapido Antigenico <i class="fas fa-info-circle fa-1x"></i> </h7>
 
-      <div class="col-12">
-       
-        <div id="dropd" class='flex justify-between'>
-          
-           <p class="flex">90$</p>
-           
-          <div>
-            <label>Qta</label>
+        <div class="col-12">
+
+          <div id="dropd" class='flex justify-between'>
+
+            <p class="flex">90$</p>
+
+            <div>
+              <label>Qta</label>
               <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
                 <option selected>0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
+            </div>
           </div>
         </div>
       </div>
-   </div>
 
-       <div class="type-02 mx-7">
-      <h7>Tampone Molecolare PCR <i class="fas fa-info-circle fa-1x"></i></h7>
+      <div class="type-02 mx-7">
+        <h7>Tampone Molecolare PCR <i class="fas fa-info-circle fa-1x"></i></h7>
 
-    <div class="col-12">
-      
-      <div id="dropd" class='flex justify-between '>
-        <p class="flex">50$</p>
-         <div>
-            <label>Qta</label>
-             <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
-               <option selected>0</option>
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-             </select>
-         </div>
+        <div class="col-12">
+
+          <div id="dropd" class='flex justify-between '>
+            <p class="flex">50$</p>
+            <div>
+              <label>Qta</label>
+              <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </div>
-</div>
-</div>
 
 
 
@@ -102,19 +102,22 @@
     <h4 class='text-4xl xl:text-2xl  sm:text-xl font-bold mt-16 '>03. Scegli fra le date e orari disponibili
     </h4>
     <p>Date</p>
-    <div class="btn_group inline-flex flex-wrap 2xl:mr-40">
-     @foreach($day as $dates)
-     <livewire:buttons btn="{{$dates->id}}" value="btn1" date="{{$dates->date}}"/>
-     @endforeach
-     
+    <div class="date mr-20">
+      <div class="grid grid-cols-2 gap-4  btn_group inline-flex flex-wrap 2xl:mr-40 lg:grid-cols-6">
+        @foreach($day as $dates)
+        <livewire:buttons btn="{{$dates->id}}" value="btn1" date="{{$dates->date}}" />
+        @endforeach
+
+      </div>
     </div>
-     
 
     <p>Orari</p>
-    <div class="btn_group text-blue-900 inline-flex flex-wrap 2xl:mr-40">
-    @foreach($orari as $times)
-      <livewire:buttonora bt="{{$times->orari}}" val="btn2" ora="{{$times->orari}}"/>
-      @endforeach
+    <div class="ora">
+      <div class="grid grid-cols-2 gap-4 btn_group text-blue-900 inline-flex flex-wrap 2xl:mr-40 lg:grid-cols-6 ">
+        @foreach($orari as $times)
+        <livewire:buttonora bt="{{$times->orari}}" val="btn2" ora="{{$times->orari}}" />
+        @endforeach
+      </div>
     </div>
 
   </div>
