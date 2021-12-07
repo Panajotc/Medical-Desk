@@ -74,16 +74,16 @@
       </div>
 
       <div class="type-02 mx-7">
-        <h7>Tampone Molecolare PCR <i class="fas fa-info-circle fa-1x"></i></h7>
-
+        <h7>Tampone Molecolare PCR<i class="fas fa-info-circle fa-1x"></i></h7>
+        <input name="tampone" type="hidden" value="Tampone Moleculare PCR">
         <div class="col-12">
 
           <div id="dropd" class='flex justify-between '>
             <p class="flex">50$</p>
             <div>
               <label>Qta</label>
-              <select class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
-                <option selected>0</option>
+              <select name="quantity" class="form-select-1 text-blue-900 " id="inlineFormSelectPref">
+                <option value="0" selected>0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

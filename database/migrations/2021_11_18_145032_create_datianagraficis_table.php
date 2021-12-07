@@ -14,7 +14,7 @@ class CreateDatianagraficisTable extends Migration
     public function up()
     {
         Schema::create('datianagraficis', function (Blueprint $table) {
-            $table->id("idpersoni");
+            $table->id();
             $table->string("name");
             $table->string("cogname");
             $table->string("email");
@@ -22,8 +22,6 @@ class CreateDatianagraficisTable extends Migration
             $table->string("nazionalita");
             $table->integer("code_di_fiscale");
             $table->date("date");
-            $table->boolean("male");
-            $table->boolean("female");
             $table->integer("Comune_residenca");
             $table->integer("Cap");
             $table->string("Indirizzo");

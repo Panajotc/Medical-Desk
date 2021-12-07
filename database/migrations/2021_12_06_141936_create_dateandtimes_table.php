@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDataandtimeTable extends Migration
+class CreateDateandtimesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDataandtimeTable extends Migration
      */
     public function up()
     {
-        Schema::create('dataandtime', function (Blueprint $table) {
+        Schema::create('dateandtimes', function (Blueprint $table) {
             $table->id();
             $table->foreignid('date_id')->constrained('dates');
             $table->foreignid('orari_id')->constrained('times');
@@ -27,6 +27,6 @@ class CreateDataandtimeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dataandtime');
+        Schema::dropIfExists('dateandtimes');
     }
 }

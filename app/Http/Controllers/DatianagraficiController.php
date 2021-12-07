@@ -8,12 +8,15 @@ use App\Models\Ricevutas;
 use App\Models\Location;
 use App\Models\Date;
 use App\Models\Time;
+use App\Models\Tampone;
+
 
 
 class DatianagraficiController extends Controller
 {
   public function index()
   { 
+    
     $day = Date::all();
     $orari= Time::all();
     $place = Location::all();
@@ -30,8 +33,9 @@ class DatianagraficiController extends Controller
 
   public function store(Request $request)
   {
-
+    
     $this->validate($request, [
+      'quantity'=>'required',
       'name' => 'required',
       'cogname' => 'required',
       'email' => 'required',
@@ -39,8 +43,6 @@ class DatianagraficiController extends Controller
       'nazionalita' => 'required',
       'code_di_fiscale' => 'required',
       'date' => 'required',
-      // 'male'=>'required',
-      // 'female'=>'requried',
       'Comune_residenca' => 'required',
       'Cap' => 'required',
       'Indirizzo' => 'required',
@@ -53,6 +55,7 @@ class DatianagraficiController extends Controller
       'postal_code' => 'required',
       'province' => 'required',
       'country' => 'required'
+      
     ]);
 
 
@@ -65,8 +68,6 @@ class DatianagraficiController extends Controller
       'nazionalita' => $request->nazionalita,
       'code_di_fiscale' => $request->code_di_fiscale,
       'date' => $request->date,
-      //  'male'=>$request->male,
-      //  'female'=>$request->female,
       'Comune_residenca' => $request->Comune_residenca,
       'Cap' => $request->Cap,
       'Indirizzo' => $request->Indirizzo
@@ -85,8 +86,11 @@ class DatianagraficiController extends Controller
       'country' => $request->country
 
     ]);
+      Tampone::create([
+        'quantity'=>$request->quantity
+      ]);
 
-
+     
     return redirect()->back();
   }
 }

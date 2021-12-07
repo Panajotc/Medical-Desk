@@ -14,8 +14,8 @@ class CreateRicevutasTable extends Migration
     public function up()
     {
         Schema::create('ricevutas', function (Blueprint $table) {
-            $table->id("id");
-            $table->foreign('id')->references('idpersoni')->on('datianagraficis');
+            $table->id();
+            $table->foreignId('user_id')->constrained('datianagraficis');
             $table->string("firstname");
             $table->string("lastname");
             $table->integer("tax_code");
@@ -26,7 +26,6 @@ class CreateRicevutasTable extends Migration
             $table->string("province");
             $table->string("country");
         });
-       
     }
 
     /**
