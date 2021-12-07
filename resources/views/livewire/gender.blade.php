@@ -2,7 +2,7 @@
 <div id="gender">
           
           <div class="mb-3">
-            <input class="form-check-input" type="checkbox" name="{{$name}}" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="{{$name}}" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">M</label>
           </div>
 
