@@ -1,6 +1,6 @@
-<div id="feedback_issue">
+<div id="feedback_issue" wire:click="show({{$btn}})">
 
-  <input type="radio" id="{{$btn}}" name="button" value="{{$value}}">
+  <input type="radio" id="{{$btn}}" name="button" value="{{$btnvalue}}">
   <label for="{{$btn}}" class="label_exp">{{$date}}</label>
 </div>
 

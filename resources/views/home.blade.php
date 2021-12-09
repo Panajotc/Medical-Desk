@@ -105,7 +105,7 @@
     <div class="date mr-20">
       <div class="grid grid-cols-2 gap-4  btn_group inline-flex flex-wrap 2xl:mr-40 lg:grid-cols-6">
         @foreach($day as $dates)
-        <livewire:buttons btn="{{$dates->id}}" value="btn1" date="{{$dates->date}}" />
+        <livewire:buttons btn="{{$dates->id}}" btnvalue="btn1" date="{{$dates->date}}" />
         @endforeach
 
       </div>
